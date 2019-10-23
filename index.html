@@ -6,18 +6,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://kit.fontawesome.com/e9f5e7485c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
-            <div class="brand-logo center">Weather Dashboard<i class="fas fa-temperature-low"></i><div>
+            <div class="brand-logo center"><strong>Weather Dashboard</strong><i class="material-icons">
+                    beach_access
+                    </i></div>
         </div>
     </nav>
     
+    <div class="row">
+        <div class="col s4 m3 cityList">
+            <div class="card">
+                <div class="card-content col m12">
+                    <span class="card-title">Search for a City:</span>
+                    <input class="col m8" type="text" id="cityTyped">
+                    <a class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
 
-    
+                    <ul class="collection col m12" id="searchedCities">
+                        <!-- this is where seached cities go. -->
+                        <li class="collection-item">when searched then saved here.</li>
+                        <li class="collection-item">Alvin</li>
+                        <li class="collection-item">Alvin</li>
+                        <li class="collection-item">Alvin</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s8 m9 cityResults">
+            <div class="todayWeather">
+                <!-- this is where your seached city today's weather goes. -->
+            </div>
+            <div class="row">
+                <div id="daysForecasts"><strong>5-Day Forecast:</strong></div>
+                    <div class="col s6 m2">
+                        <div class="card-panel teal ">
+                            <!-- this is where daily forecast go. -->
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col s6 m2">
+                        <div class="card-panel teal">
+                            <!-- this is where daily forecast go. -->
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col s6 m2">
+                        <div class="card-panel teal">
+                            <!-- this is where daily forecast go. -->
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col s6 m2">
+                            <div class="card-panel yellow">
+                                <!-- this is where daily forecast go. -->
+                                <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </span>
+                            </div>
+                    </div>
+                    
+                    <div class="col s6 m2">
+                            <div class="card-panel blue">
+                                <!-- this is where daily forecast go. -->
+                                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </span>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
     <link rel="stylesheet" href="Assets/script.js">
 </body>
 </html>
