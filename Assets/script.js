@@ -7,5 +7,13 @@ searchBtn.addEventListener('click', function(event) {
     resultCity.setAttribute('class', 'collection-item');
     resultCity.append(searchedCity);
     searchedCitiesList.append(resultCity);
+    
+    // displayTodayResult(event)
 })
+    // function displayTodayResult() {
+    //     var todayWeather = document.querySelector('.todayWeather');
+    //     var cityWeather = document.createElement('div');
+    //     cityWeather.setAttribute('class', 'col s12 m12');
+    //     documn.innerHTML 
+    // }
 

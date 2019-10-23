@@ -2,12 +2,24 @@
     background-color: #3c414a
 }
 
-
-
 #daysForecasts {
     font-size: 30px;
+    border-style: dotted;
 }
 
 .btn {
     background-color: #4c85ed;
+}
+
+.fiveDays {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.here {
+    border-style: dotted;
+}
+
+.cityResults {
+    border-style: dotted;
 }
