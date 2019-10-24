@@ -7,10 +7,11 @@ searchBtn.addEventListener('click', function(event) {
     resultCity.setAttribute('class', 'collection-item');
     resultCity.append(searchedCity);
     searchedCitiesList.append(resultCity);
-    
-    // displayTodayResult(event)
+
+    displayTodayResult(event)
 })
-    // function displayTodayResult() {
+
+    function displayTodayResult() {
     //     var todayWeather = document.querySelector('.todayWeather');
     //     var cityWeather = document.createElement('div');
     //     cityWeather.setAttribute('class', 'col s12 m12');
@@ -18,6 +19,10 @@ searchBtn.addEventListener('click', function(event) {
     // }
 
 //for this section, following bujumbura.    
+
+var queryURL = 
+NTM6tJfPNDk983UmexlyahObV5JmJMhD
+
 var APIKey = 'WGa2O3ILKBIKdLEWQ1vIR82ytZ5KtoBV'
 
 var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey="+ APIKey + '&q=' + searchedCity;

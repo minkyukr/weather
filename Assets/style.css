@@ -4,7 +4,6 @@
 
 #daysForecasts {
     font-size: 30px;
-    border-style: dotted;
 }
 
 .btn {
@@ -16,10 +15,12 @@
     justify-content: space-evenly;
 }
 
-.here {
-    border-style: dotted;
+.cityResults {
+
 }
 
-.cityResults {
-    border-style: dotted;
+#batmanWeather {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
