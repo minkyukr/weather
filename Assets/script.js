@@ -1,5 +1,6 @@
 var searchedCitiesList = document.querySelector('#searchedCities');
 
+
 searchBtn.addEventListener('click', function(event) {
     event.preventDefault();
     var searchedCity = document.querySelector('#searchedCity').value;
@@ -8,36 +9,37 @@ searchBtn.addEventListener('click', function(event) {
     resultCity.append(searchedCity);
     searchedCitiesList.append(resultCity);
 
-    displayTodayResult(event)
-})
-
     function displayTodayResult() {
-    //     var todayWeather = document.querySelector('.todayWeather');
-    //     var cityWeather = document.createElement('div');
-    //     cityWeather.setAttribute('class', 'col s12 m12');
-    //     documn.innerHTML 
-    // }
+        var APIKey = "166a433c57516f51dfab1f7edaed8413";
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchedCity + '&units=imperial&appid=' + APIKey;
 
-//for this section, following bujumbura.    
+        $.ajax({
+            url: queryURL,
+            method: 'GET'
+        })
+        .then(function(response) {
+        var searchResult = document.createElement('ul');
+        searchResult.setAttribute('class', 'todayWeather collection with-header');
 
-var queryURL = 
-NTM6tJfPNDk983UmexlyahObV5JmJMhD
+        var cityHeader = document.createElement('li');
+        var temperature = document.createElement('li');
+        var humidity = document.createElement('li');
+        var windSpeed = document.createElement('li');
 
-var APIKey = 'WGa2O3ILKBIKdLEWQ1vIR82ytZ5KtoBV'
+        cityHeader.setAttribute('class', 'collection-header');
+        cityHeader.textContent += 'City of ' + searchedCity + ' ' + moment().format('MMM Do YY');
+        temperature.setAttribute('class', 'collection-item');
+        temperature.textContent += 'Temperature: ' + response.main.temp;
+        humidity.setAttribute('class', 'collection-item');
+        humidity.textContent += 'Humidy: ' + response.main.humidity;
+        windSpeed.setAttribute('class', 'collection-item');
+        windSpeed.textContent += 'Wind Speed: ' + response.wind.speed;
 
-var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey="+ APIKey + '&q=' + searchedCity;
-//http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=WGa2O3ILKBIKdLEWQ1vIR82ytZ5KtoBV&q=houston
-console.log()
-//first need to find the location key.
-
-var queryURL = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/226081?apikey=' + APIKey;
-//second using that location key, plug in into 5day forecast.
-
-
-var queryURL = "";
-
-$.ajax({
-    url: queryURL,
-    method: 'GET'
+        searchResult.append(cityHeader, temperature, humidity, windSpeed);
+        batmanWeather.replaceWith(searchResult);
+        })
+    }
+    displayTodayResult();
 })
+
 
