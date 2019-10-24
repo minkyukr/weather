@@ -16,11 +16,13 @@ searchBtn.addEventListener('click', function(event) {
     //     cityWeather.setAttribute('class', 'col s12 m12');
     //     documn.innerHTML 
     // }
+
+//for this section, following bujumbura.    
 var APIKey = 'WGa2O3ILKBIKdLEWQ1vIR82ytZ5KtoBV'
 
-var queryURL = 'http://dataservice.accuweather.com/locations/v1/topcities/150?apikey=' + APIKey;
-
-
+var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey="+ APIKey + '&q=' + searchedCity;
+//http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=WGa2O3ILKBIKdLEWQ1vIR82ytZ5KtoBV&q=houston
+console.log()
 //first need to find the location key.
 
 var queryURL = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/226081?apikey=' + APIKey;
