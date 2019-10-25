@@ -61,6 +61,12 @@ searchBtn.addEventListener('click', function(event) {
     }
     displayTodayResult();
     displayFollowingDays();
+
+    resultCity.addEventListener('click', function() {
+        reset
+        displayTodayResult();
+        displayFollowingDays();
+    })
 })
 
 
