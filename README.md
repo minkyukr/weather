@@ -1,6 +1,6 @@
 # weather
 
-The user will search a city to check the weather for the following five days.
+The user will search a city to check the weather for the following four days.
 
 1. Input a city.
 2. Click the search button:
