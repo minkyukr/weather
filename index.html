@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+
 </head>
 <body>
     <nav>
@@ -18,7 +19,7 @@
     </nav>
 
     <div class="row">
-        <div class="col s4 m3 cityList">
+        <div class="col s2 m3 cityList">
             <div class="card">
                 <div class="card-content col m12">
                     <span class="card-title">Search for a City:</span>
@@ -44,13 +45,20 @@
             </div>
             
             <div class="row col s12 m12">
-                <div id="daysForecasts"><strong>5-Day Forecast:</strong></div>
-            <div class="fiveDays">
-                <div class="col s6 m2">
-                    <div class="card-panel teal ">
+                <div id="fourDaysHeader"><strong>4-Day Forecast:</strong></div>
+            <div class="fourDays">
+                <div class="fourDaysResult">
+                    <div class="card-panel otherDays dayOne">
+                        <!-- this is where daily forecast go. -->                      
+                    </div>
+                    <div class="card-panel otherDays dayTwo">
                         <!-- this is where daily forecast go. -->
-                        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                        </span>
+                    </div>
+                    <div class="card-panel otherDays dayThree">
+                        <!-- this is where daily forecast go. -->
+                    </div>
+                    <div class="card-panel otherDays dayFour">
+                        <!-- this is where daily forecast go. -->
                     </div>
                 </div> 
             </div>   

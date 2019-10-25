@@ -2,7 +2,7 @@
     background-color: #3c414a
 }
 
-#daysForecasts {
+#fourDaysHeader {
     font-size: 30px;
 }
 
@@ -10,9 +10,9 @@
     background-color: #4c85ed;
 }
 
-.fiveDays {
+.fourDays {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #batmanWeather {
@@ -26,5 +26,22 @@
 }
 
 .collection-item {
-    font-size: 20px;;
+    font-size: 20px;
+    background-color: grey;
+}
+
+.fourDaysResult {
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+.otherDays {
+    background-color: #3c414a;
+    color: white;
+}
+
+#searchedCities {
+    display: flex;
+    flex-direction: column;
 }
