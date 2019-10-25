@@ -63,7 +63,7 @@ searchBtn.addEventListener('click', function(event) {
     displayFollowingDays();
 
     resultCity.addEventListener('click', function() {
-        reset
+        
         displayTodayResult();
         displayFollowingDays();
     })
