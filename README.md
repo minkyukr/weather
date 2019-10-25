@@ -6,10 +6,10 @@ The user will search a city to check the weather for the following four days.
 2. Click the search button:
     1. get the input text value. 
         search the information from API.
-        from the API, it needs the following information: city, date, temperature, humidity, wind speed and un index.
+        from the API, it needs the following information: city, date, temperature, humidity and wind speed.
         collect all these informations and append to todayWeather.
 
-        for the 5-day forcasts.
+        for the 4-day forecasts.
         get the dates, an icon, temperature and humidity from API.
 
     2. the input city should be added to the list of searchedCities.
